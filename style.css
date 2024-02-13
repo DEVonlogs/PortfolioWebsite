@@ -9,12 +9,16 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(38,33,33);
 }
 
 a,
 .btn {
   transition: all 300ms ease;
+}
+
+h1, h2, h3 {
+  color: rgb(38,33,33);
 }
 
 /* Navigation Css */
@@ -35,25 +39,37 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(38,33,33);
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: rgb(242,128,10);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-  text-decoration-color: rgb(85, 85, 85);
+  text-decoration-color: rgb(242,128,10);
   transition: text-decoration, text-decoration-color 1s ease;
 }
 .logo {
   font-size: 1.5rem;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  background-color: rgb(242,128,10);
+  border-radius: 20rem;
+  box-shadow: 0rem 0.5rem 0.5rem rgb(239,169,77);
 }
 .logo:hover {
   cursor: default;
   font-size: 2.5rem;
+  color: rgb(242,128,10);
   transition: font-size 1s ease;
+}
+
+.nav-bar {
+  padding: 0.7rem 10rem 0.7rem 10rem;
+  background-color: rgb(242,128,10);
+  border-radius: 20rem;
+  box-shadow: 0rem 0.5rem 0.5rem rgb(239,169,77);
 }
 
 /* Mobile navigation Css */
@@ -137,6 +153,7 @@ a:hover {
 .profile-pic {
   border-radius: 47%;
   margin-right: 5rem;
+  box-shadow: 0rem 0.8rem 0.8rem rgb(239,169,77)
 }
 
 /* Section */
@@ -184,9 +201,19 @@ section {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
+.section_text_p3 {
+  text-align: center;
+  color: rgb(124,107,101);
+}
+.section_text_p4 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: rgb(124,107,101);
+}
 .title {
   font-size: 3rem;
   text-align: center;
+  color: rgb(242,128,10);
 }
 
 #socials-container {
@@ -218,7 +245,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(242,128,10) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -228,20 +255,22 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(242,128,10);
   color: white;
 }
 
+
 .btn-color-1:hover {
-  background: black;
+  background: rgb(210,90,10);
 }
 
 .btn-color-2 {
   background: none;
+  color: rgb(38,33,33)
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgb(210,90,10) 0.1rem solid;
 }
 
 /* About Section */
@@ -282,7 +311,7 @@ section {
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(239,169,77);
   text-align: center;
 }
 
@@ -305,7 +334,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: rgb(239,169,77);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -344,7 +373,7 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(239,169,77);
   background: rgb(255, 255, 255);
 }
 
@@ -356,13 +385,13 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: rgb(239,169,77);
 
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163)
+  color: rgb(38,33,33);
+  border-color: rgb(242,128,10)
 }
 
 /* Contact */
@@ -379,7 +408,7 @@ article .icon {
   justify-content: center;
   border-radius: 2rem;
   border:rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(239,169,77);
   background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
