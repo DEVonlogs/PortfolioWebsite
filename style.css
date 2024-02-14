@@ -44,24 +44,81 @@ a {
   text-decoration-color: white;
 }
 
-a:hover {
-  color: rgb(242,128,10);
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-  text-decoration-color: rgb(242,128,10);
-  transition: text-decoration, text-decoration-color 1s ease;
+
+/* Link effect */
+.link:hover {
+  color: #fff;
 }
+.link {
+  color: rgb(38,33,33);
+  padding: 0.2rem;
+  position: relative;
+  margin-left: 10px;    
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.link::before {
+  bottom: 0;
+  left: 0;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Link 2 effect*/
+
+.link2:hover {
+  color: rgb(242,128,10);
+}
+.link2 {
+  color: rgb(38,33,33);
+  padding: 0.2rem;
+  position: relative;
+  margin-left: 10px;    
+}
+
+.link2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: rgb(242,128,10);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: all 0.6s ease;
+}
+
+.link2::before {
+  bottom: 0;
+  left: 0;
+}
+
+.link2:hover::before {
+  transform: scaleX(1);
+}
+
 .logo {
   font-size: 1.5rem;
   padding: 0.7rem 2rem 0.7rem 2rem;
   background-color: rgb(242,128,10);
   border-radius: 20rem;
-  box-shadow: 0rem 0.5rem 0.5rem rgb(239,169,77);
+  box-shadow: 2px 3px 2px rgb(239,169,77);
 }
 .logo:hover {
   cursor: default;
   font-size: 2.5rem;
-  color: rgb(242,128,10);
+  color: white;
   transition: font-size 1s ease;
 }
 
@@ -69,7 +126,7 @@ a:hover {
   padding: 0.7rem 10rem 0.7rem 10rem;
   background-color: rgb(242,128,10);
   border-radius: 20rem;
-  box-shadow: 0rem 0.5rem 0.5rem rgb(239,169,77);
+  box-shadow: 2px 3px 2px rgb(239,169,77);
 }
 
 /* Mobile navigation Css */
@@ -442,3 +499,4 @@ footer {
 footer p {
   text-align: center;
 }
+
